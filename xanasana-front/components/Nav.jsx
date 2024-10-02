@@ -47,14 +47,14 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="container mx-auto flex flex-row items-center justify-center gap-8">
+            <div className="container mx-auto flex flex-row items-center justify-center gap-8 min-w-[620px]">
                 {
                     links.map((link, index) => {
                         return (
                             <div key={index} className="">
                                 <Link  
                                     href={link.href} 
-                                    className={`${pathname === link.href && 'border-b-2 border-accent'} uppercase`}
+                                    className={`${pathname === link.href && 'border-b-2 border-accent'} uppercase hover:font-semibold transition-all duration-300`}
                                 >
                                     {link.name}
                                 </Link>

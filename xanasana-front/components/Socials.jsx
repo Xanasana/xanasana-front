@@ -26,21 +26,21 @@ const Socials = ({containerStyles, setMobileNav}) => {
             <li className="">
                 <Link href="https://www.facebook.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaFacebook />
+                        <FaFacebook className="text-xl text-[#473936] hover:text-white transition-all duration-300"/>
                     </a>
                 </Link>
             </li>
             <li className="">
                 <Link href="https://www.instagram.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
+                        <FaInstagram className="text-2xl text-[#473936] hover:text-white transition-all duration-300"/>
                     </a>
                 </Link>
             </li>
             <li className="">
                 <Link href="https://www.youtube.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaYoutube />
+                        <FaYoutube className="text-2xl text-[#473936] hover:text-white transition-all duration-300"/>
                     </a>
                 </Link>
             </li>

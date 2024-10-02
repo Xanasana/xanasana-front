@@ -19,10 +19,12 @@ import { useGlobalState } from "@/context/GlobalStateContext";
 //Variants:
 const animation = {
     initial: {
-        top: '0%',
+        top: '100%',
+        opacity: 0
     },
     animate: {
-        top: '-100%',
+        top: '100%',
+        opacity:1
     },
     exit: {
         top: ['100%', '0%'],
@@ -43,9 +45,9 @@ const Transition = () => {
                             variants={animation} 
                             initial='initial' 
                             animate='animate' 
-                            exit='exit' 
+                            // exit='exit' 
                             transition={{ 
-                                duration: 0.6, 
+                                duration: 0.2, 
                                 ease: 'easeInOut', 
                                 delay: 0.2, 
                             }} 

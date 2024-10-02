@@ -57,7 +57,7 @@ const MobileNav = ({setMobileNav}) => {
                             <li key={index} className="" onClick={() => setMobileNav(false)}>
                                 <Link  
                                     href={link.href} 
-                                    className={`${pathname === link.href && 'border-b-2 border-accent'} uppercase max-w-max mx-auto`}
+                                    className={`${pathname === link.href && 'border-b-2 border-accent'} uppercase max-w-max mx-auto hover:font-semibold transition-all duration-300`}
                                 >
                                     {link.name}
                                 </Link>

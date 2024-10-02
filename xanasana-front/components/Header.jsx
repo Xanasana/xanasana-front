@@ -32,30 +32,30 @@ const Header = () => {
             className="w-full pb-6 lg:pb-[50px] fixed bg-accent-100 lg:bg-transparent z-40"
         >
             {/* Topbar */}
-            <div className="bg-secondary-100 mb-6 lg:mb-[50px] py-4 lg:py-0">
+            <div className="bg-secondary-100 mb-6 lg:mb-[20px] py-4 lg:py-0">
                 <div className="w-[95%] mx-auto h-full">
                     <div className="flex items-center justify-between h-full">
                         {/* Phone & email */}
                         <div 
                             // onMouseEnter={mouseEnterHandler}
                             // onMouseLeave={mouseLeaveHandler}
-                            className="flex flex-col lg:flex-row items-center h-full gap-2 lg:gap-6 w-full justify-between lg:w-auto lg:justify-normal"
+                            className="flex flex-col lg:flex-row items-center h-full gap-2 lg:gap-6 w-full justify-between lg:w-auto lg:justify-normal py-1"
                         >
                             {/* Phone */}
-                            <div className="flex items-center gap-2 text-white">
+                            <div className="flex items-center gap-2 text-[#473936] hover:text-white transition-all duration-300">
                                 <FaPhoneAlt />
-                                <a href="tel:+34624717068" className="hover:underline">
+                                <a href="tel:+34624717068" className="font-semibold">
                                     +34 624 717 068
                                 </a>
                             </div>
                             {/* Email */}
-                            <div className="flex items-center gap-2 text-white">
+                            <div className="flex items-center gap-2 text-[#473936] hover:text-white transition-all duration-300">
                                 <FaWhatsapp  />
                                 <a 
                                     href="https://wa.me/34624717068" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    className="hover:underline"
+                                    className="font-semibold"
                                 >
                                     WhatsApp
                                 </a>
@@ -67,7 +67,7 @@ const Header = () => {
                             // onMouseLeave={mouseLeaveHandler}
                             className="hidden lg:block"
                         >
-                            <Socials containerStyles='flex gap-4 text-white'/>
+                            <Socials containerStyles='flex items-center gap-4'/>
                         </div>
                     </div>
                 </div>
