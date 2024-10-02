@@ -1,4 +1,6 @@
+'use client';
 //IMPORTS REACT/NEXT DEPENDENCIES:
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //IMPORTS EXT DEPENDENCIES:
@@ -7,22 +9,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useGlobalState } from "@/context/GlobalStateContext";
 //IMPORTS HOOKS:
 //IMPORTS VARIANTS:
-// import { fadeIn } from '@/lib/hero-variants';
+//import { fadeIn } from '@/lib/hero-variants';
 //IMPORTS COMPONENTS:
 //IMPORTS IMAGES:
 //IMPORTS CSS:
 //IMPORT ENV:
 
-import React from 'react'
-
-const Home = () => {
+const Nav = () => {
 
 
     return (
-      <div className="">
-        Home
-      </div>
+        <nav>Desktop Nav</nav>
     )
 }
 
-export default Home;
+export default Nav;

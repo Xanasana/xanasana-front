@@ -1,16 +1,48 @@
-import localFont from "next/font/local";
-import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+//IMPORTS REACT/NEXT DEPENDENCIES:
+
+import Link from "next/link";
+import Image from "next/image";
+//IMPORTS EXT DEPENDENCIES:
+import {Marcellus, Montserrat } from 'next/font/google';
+import { motion, AnimatePresence } from 'framer-motion';
+//IMPORTS GLOBAL STATES:
+import { useGlobalState } from "@/context/GlobalStateContext";
+//IMPORTS HOOKS:
+//IMPORTS VARIANTS:
+// import { fadeIn } from '@/lib/hero-variants';
+//IMPORTS COMPONENTS:
+//IMPORTS IMAGES:
+//IMPORTS CSS:
+//IMPORT ENV:
+import GlobalStateContextProvider from "@/context/GlobalStateContext";
+// import localFont from "next/font/local";
+import "./globals.css";
+import Header from "@/components/Header";
+import CursorProvider from "@/components/CursorContext";
+
+const marcellus = Marcellus({ 
+  subsets: ['latin'], 
+  weight: ['400'], 
+  variable: '--font-marcellus'
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const montserrat = Montserrat({ 
+  subsets: ['latin'], 
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], 
+  variable: '--font-montserrat'
 });
+
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,12 +51,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <GlobalStateContextProvider>
+      <html lang="en" className="h-screen">
+        <body
+          className={`${marcellus.variable} ${montserrat.variable} antialiased overflow-x-hidden`}
+        >
+          <CursorProvider>
+            <Header />
+            {children}
+          </CursorProvider>
+        </body>
+      </html>
+    </GlobalStateContextProvider>
   );
 }

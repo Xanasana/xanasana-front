@@ -1,4 +1,6 @@
+'use client';
 //IMPORTS REACT/NEXT DEPENDENCIES:
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 //IMPORTS EXT DEPENDENCIES:
@@ -7,22 +9,25 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useGlobalState } from "@/context/GlobalStateContext";
 //IMPORTS HOOKS:
 //IMPORTS VARIANTS:
-// import { fadeIn } from '@/lib/hero-variants';
+//
 //IMPORTS COMPONENTS:
 //IMPORTS IMAGES:
+import { IoCloseOutline } from "react-icons/io5";
 //IMPORTS CSS:
 //IMPORT ENV:
 
-import React from 'react'
 
-const Home = () => {
+
+const MobileNav = ({setMobileNav}) => {
 
 
     return (
-      <div className="">
-        Home
-      </div>
+        <nav className="text-white">
+            <div className="cursor-pointer" onClick={() => setMobileNav(false)}>
+                <IoCloseOutline className="text-4xl"/>
+            </div>
+        </nav>
     )
 }
 
-export default Home;
+export default MobileNav;
