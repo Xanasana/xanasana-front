@@ -7,19 +7,21 @@ import Image from "next/image";
 import {Marcellus, Montserrat } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
 //IMPORTS GLOBAL STATES:
+import GlobalStateContextProvider from "@/context/GlobalStateContext";
 import { useGlobalState } from "@/context/GlobalStateContext";
+import CursorProvider from "@/components/CursorContext";
 //IMPORTS HOOKS:
 //IMPORTS VARIANTS:
 // import { fadeIn } from '@/lib/hero-variants';
 //IMPORTS COMPONENTS:
+import Header from "@/components/Header";
+import Transition from "@/components/Transition";
 //IMPORTS IMAGES:
 //IMPORTS CSS:
 //IMPORT ENV:
-import GlobalStateContextProvider from "@/context/GlobalStateContext";
 // import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";
-import CursorProvider from "@/components/CursorContext";
+import PageTransition from "@/components/PageTransition";
 
 const marcellus = Marcellus({ 
   subsets: ['latin'], 
@@ -56,10 +58,13 @@ export default function RootLayout({ children }) {
         <body
           className={`${marcellus.variable} ${montserrat.variable} antialiased overflow-x-hidden`}
         >
-          <CursorProvider>
+          {/* <CursorProvider> */}
+            <Transition />
             <Header />
-            {children}
-          </CursorProvider>
+            <PageTransition>
+              {children}
+            </PageTransition>
+          {/* </CursorProvider> */}
         </body>
       </html>
     </GlobalStateContextProvider>
