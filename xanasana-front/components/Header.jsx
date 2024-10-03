@@ -29,7 +29,7 @@ const Header = () => {
  
     return (
         <header 
-            className="w-full pb-6 lg:pb-[50px] fixed bg-accent-100 lg:bg-transparent z-40"
+            className="w-full pb-6 lg:pb-[20px] fixed bg-accent-100 lg:bg-secondary   z-40"
         >
             {/* Topbar */}
             <div className="bg-secondary-100 mb-6 lg:mb-[20px] py-4 lg:py-0">

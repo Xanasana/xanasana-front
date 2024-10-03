@@ -47,7 +47,7 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="container mx-auto flex flex-row items-center justify-center gap-8 min-w-[620px]">
+            <div className="w-[95%] mx-auto flex flex-row items-center justify-center gap-8 min-w-[620px]">
                 {
                     links.map((link, index) => {
                         return (
