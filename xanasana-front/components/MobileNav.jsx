@@ -41,8 +41,8 @@ const links = [
     },
 ]
 
-const MobileNav = ({setMobileNav}) => {
-
+const MobileNav = () => {
+    const {mobileNav, setMobileNav } = useGlobalState(false);
     const pathname = usePathname();
 
     return (

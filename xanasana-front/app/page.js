@@ -56,7 +56,16 @@ const Home = () => {
                 }
             }}
         >
-            <div className="container mx-auto">
+            <div className="absolute top-0 left-0 w-screen h-screen z-0"
+                style={{
+                backgroundImage: 'url("/assets/backgrounds/bg-2-b.svg")', // Reemplaza esta ruta con la ubicación de tu imagen
+                backgroundPosition: 'center',  // Centra la imagen
+                backgroundRepeat: 'no-repeat', // Evita que la imagen se repita
+                backgroundSize: 'cover',
+                opacity:0.1
+                }}
+            ></div>
+            <div className="container mx-auto z-10">
                 <div className="flex flex-col lg:flex-row items-center h-full w-full">
                     {/* Text */}
                     <motion.div 
@@ -82,7 +91,7 @@ const Home = () => {
                       <p className="lead max-w-xl mx-auto">
                           Experimente el poder curativo de la fisioterapia.
                       </p>
-                      <div className="flex flex-col lg:flex-row items-center gap-4 max-w-max mx-auto lg:mx-0">
+                      <div className="flex flex-col lg:flex-row items-center gap-4 max-w-max mx-auto lg:mx-0 z-10">
                           <button onClick={handleClick} className="btn btn-lg font-bold">
                               Contacta con nosotros
                           </button>

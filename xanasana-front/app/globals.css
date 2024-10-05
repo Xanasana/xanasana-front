@@ -36,7 +36,7 @@
 }
 
 .btn {
-  @apply bg-accent min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-marcellus uppercase tracking-[1px] h-[58px] pl-8 pr-6 items-center justify-center text-white hover:bg-[#473936] hover:text-accent transition-all duration-300;
+  @apply bg-accent min-w-[178px] rounded-tl-[30px] rounded-bl-[30px] rounded-tr-[4px] rounded-br-[24px] font-marcellus uppercase tracking-[1px] h-[58px] pl-8 pr-6 items-center justify-center text-white hover:bg-[#473936] hover:text-accent shadow-lg transition-all duration-300;
 }
 
 .input {

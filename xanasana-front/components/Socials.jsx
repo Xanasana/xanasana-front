@@ -18,29 +18,48 @@ import { FaYoutube, FaFacebook, FaInstagram } from "react-icons/fa";
 
  
 
-const Socials = ({containerStyles, setMobileNav}) => {
+const Socials = ({containerStyles}) => {
 
+    const {mobileNav, setMobileNav } = useGlobalState(false);
 
     return (
         <ul className={`${containerStyles}`}>
             <li className="">
                 <Link href="https://www.facebook.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="text-xl text-[#473936] hover:text-white transition-all duration-300"/>
+                        <FaFacebook 
+                            className={`text-xl transition-all duration-300 ${
+                                mobileNav
+                                    ? "text-white hover:text-[#f19687]"
+                                    : "text-[#473936] hover:text-white"
+                                }`}
+                        />
                     </a>
                 </Link>
             </li>
             <li className="">
                 <Link href="https://www.instagram.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="text-2xl text-[#473936] hover:text-white transition-all duration-300"/>
+                        <FaInstagram 
+                            className={`text-xl transition-all duration-300 ${
+                                mobileNav
+                                    ? "text-white hover:text-[#f19687]"
+                                    : "text-[#473936] hover:text-white"
+                                }`}
+                        />
                     </a>
                 </Link>
             </li>
             <li className="">
                 <Link href="https://www.youtube.com" legacyBehavior passHref>
                     <a target="_blank" rel="noopener noreferrer">
-                        <FaYoutube className="text-2xl text-[#473936] hover:text-white transition-all duration-300"/>
+                        <FaYoutube 
+                            className={`text-xl transition-all duration-300 ${
+                                mobileNav
+                                    ? "text-white hover:text-[#f19687]"
+                                    : "text-[#473936] hover:text-white"
+                                }`}
+                        />
                     </a>
                 </Link>
             </li>

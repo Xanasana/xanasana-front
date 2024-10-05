@@ -57,6 +57,7 @@ export default function RootLayout({ children }) {
       <html lang="en" className="h-screen">
         <body
           className={`${marcellus.variable} ${montserrat.variable} antialiased overflow-x-hidden`}
+          style={{position: 'relative'}}
         >
           {/* <CursorProvider> */}
             <Transition />

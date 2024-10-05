@@ -25,8 +25,8 @@ import { IoMdMail } from "react-icons/io";
 const Header = () => {
 
     // const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
-    const [mobileNav, setMobileNav ] = useState(false);
- 
+    const {mobileNav, setMobileNav } = useGlobalState(false);
+ console.log('mobileNav', mobileNav)
     return (
         <header 
             className="w-full pb-6 lg:pb-[20px] fixed bg-accent-100 lg:bg-secondary   z-40"
@@ -67,7 +67,7 @@ const Header = () => {
                             // onMouseLeave={mouseLeaveHandler}
                             className="hidden lg:block"
                         >
-                            <Socials containerStyles='flex items-center gap-4'/>
+                            <Socials containerStyles='flex items-center gap-4 text-[#473936] hover:text-white'/>
                         </div>
                     </div>
                 </div>

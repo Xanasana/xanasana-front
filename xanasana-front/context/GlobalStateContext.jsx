@@ -15,6 +15,7 @@ const GlobalStateContextProvider = ({ children }) => {
     const [isOpenNav, setIsOpenNav] = useState(false);
     const [isNavActive, setIsNavActive] = useState(false);
     const [heroSliders, setHeroSliders] = useState();
+    const [mobileNav, setMobileNav ] = useState(false);
     
 
     
@@ -26,7 +27,7 @@ const GlobalStateContextProvider = ({ children }) => {
                 isLoading, setIsLoading,
                 isOpenNav, setIsOpenNav,
                 isNavActive, setIsNavActive,
-                
+                mobileNav, setMobileNav
             }}
         >
             {children}
