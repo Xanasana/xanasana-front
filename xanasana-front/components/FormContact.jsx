@@ -15,12 +15,19 @@ import { useGlobalState } from "@/context/GlobalStateContext";
 //IMPORTS CSS:
 //IMPORT ENV:
 
-import React from 'react'
 
 const FormContact = () => {
-  return (
-    <div>FormContact</div>
-  )
+    return (
+      <form
+        className="flex flex-col gap-4"
+      >
+          <input type="text" className="input" placeholder="Nombre completo" />
+          <input type="text" className="input" placeholder="Direción de email" />
+          <input type="text" className="input" placeholder="Nº de teléfono" />
+          <textarea type="text" className="textarea m-2" placeholder="Tu mensaje" />
+          <button type="submit" className="btn self-start">Enviar</button>
+      </form>
+    )
 }
 
-export default FormContact
+export default FormContact;

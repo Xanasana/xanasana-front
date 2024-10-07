@@ -47,82 +47,119 @@ const Contact = () => {
                 }}
             >
                 <div className="w-[95%] h-full mx-auto flex pt-[220px] lg:pt-[150px] pb-4 lg:pb-0 z-10">
-                    <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12 z-10">
+                    <div className="h-full w-full flex flex-col lg:flex-row  items-center lg:items-start lg:top-10 justify-center lg:justify-between gap-12 z-10">
                         {/* Text */}
-                        <div className="">    
-                            <h3 className="h3 mb-8 text-center lg:text-left">
+                        <motion.div 
+                            className="flex flex-col items-center lg:items-start gap-4"
+                            initial={{opacity: 0, x: -80}}
+                                animate={{
+                                opacity: 1,
+                                x: 0,
+                                transition: {
+                                    delay: 1.2,
+                                    duration: 0.8,
+                                    ease: 'easeIn',
+                                }
+                            }}
+                        >    
+                            <h3 className="h3 mb-8 lg:mt-10 text-center lg:text-left">
                                 Información de contacto
                             </h3>
                             
-                            <div className="flex flex-col items-center lg:items-start gap-4">
+                            <div 
+                                className="flex flex-col items-center lg:items-start gap-4"
+                                
+                            >
                                 {/* Items */}
-                                <div className="flex flex-col items-start gap-0">
-                                    <div className="relative w-[30px] h-[30px]">
+                                <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-0 lg:gap-2">
+                                    <div className="relative lg:flex lg:items-center lg:justify-center w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]">
                                         {/* Icon */}
                                         <Image
-                                            className="object-contain  "
+                                            className="object-contain lg:w-[50px] lg:h-[50px] "
                                             src='/assets/contact/pin.svg'
                                             width={30}
                                             height={30}
                                             priority
                                             quality={100}
-                                            alt="pin icon"
+                                            alt="location icon"
                                         />
                                     </div>
-                                    <div className="pt-0 flex-1">
-                                        <h4 className="h4 mb-0">Dirección</h4>
+                                    <div className="text-center lg:text-left pt-0 flex-1">
+                                        <h4 className="h4 mb-0 font-semibold">Dirección</h4>
                                         <p className="leading-relaxed ">
-                                            C/ Los pinos, 23
-                                            <br/>
-                                            Gijon, 08792 España.
+                                            C/ Santa lucia, 34 23462 Gijon Asturias
                                         </p>
                                     </div>
                                 </div>
-                                
                                 {/* End Item */}
-                                <div className="">
-                                    <div className="relative w-[36px] h-[36px]">
+                                {/* Items */}
+                                <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-0 lg:gap-2">
+                                    <div className="relative lg:flex lg:items-center lg:justify-center w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]">
                                         {/* Icon */}
                                         <Image
-                                            className="object-contain  "
+                                            className="object-contain lg:w-[50px] lg:h-[50px] "
                                             src='/assets/contact/email.svg'
-                                            width={35}
-                                            height={35}
+                                            width={30}
+                                            height={30}
                                             priority
                                             quality={100}
                                             alt="email icon"
                                         />
                                     </div>
-                                    <div className="">
-                                        <h4 className=""></h4>
-                                        <p className=""></p>
+                                    <div className="text-center lg:text-left pt-0 flex-1">
+                                        <h4 className="h4 mb-0 font-semibold">Dirección de correo</h4>
+                                        <p className="leading-relaxed ">
+                                            mail@mail.com
+                                        </p>
                                     </div>
                                 </div>
-                                <div className="">
-                                    <div className="relative w-[36px] h-[36px]">
+                                {/* End Item */}
+                                {/* Items */}
+                                <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-center gap-0 lg:gap-2">
+                                    <div className="relative lg:flex lg:items-center lg:justify-center w-[30px] h-[30px] lg:w-[50px] lg:h-[50px]">
                                         {/* Icon */}
                                         <Image
-                                            className="object-contain  "
+                                            className="object-contain lg:w-[50px] lg:h-[50px] "
                                             src='/assets/contact/phone.svg'
-                                            width={35}
-                                            height={35}
+                                            width={30}
+                                            height={30}
                                             priority
                                             quality={100}
                                             alt="phone icon"
                                         />
                                     </div>
-                                    <div className="">
-                                        <h4 className=""></h4>
-                                        <p className=""></p>
+                                    <div className="text-center lg:text-left pt-0 flex-1">
+                                        <h4 className="h4 mb-0 font-semibold">Nº de movil</h4>
+                                        <p className="leading-relaxed ">
+                                            +34 624 717 068
+                                        </p>
                                     </div>
                                 </div>
+                                {/* End Item */}
                             </div>
 
-                        </div>
+                        </motion.div>
                         {/* Form */}
-                        <div className="">
-                            <FormContact />
-                        </div>
+                        <motion.div 
+                            className="w-full lg:w-[50%]"
+                            initial={{opacity: 0, x: 80}}
+                                animate={{
+                                opacity: 1,
+                                x: 0,
+                                transition: {
+                                    delay: 1.2,
+                                    duration: 0.8,
+                                    ease: 'easeIn',
+                                }
+                                }}
+                        >
+                            <div className="bg-[#f0cfbc] w-full max-w-[580px] gap-4 p-10 mx-auto lg:mx-0 rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg">
+                                <h3 className="h3 mb-8 text-center">
+                                    Contacto con nosotros
+                                </h3>
+                                <FormContact />
+                            </div>
+                        </motion.div>
                     </div>
                 </div>
             </motion.section>

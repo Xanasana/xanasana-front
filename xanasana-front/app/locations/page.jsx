@@ -7,6 +7,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from 'framer-motion';
 //IMPORTS GLOBAL STATES:
 import { useGlobalState } from "@/context/GlobalStateContext";
+import MapLocations from "@/components/MapLocations";
 //IMPORTS HOOKS:
 //IMPORTS VARIANTS:
 //import { fadeIn } from '@/lib/hero-variants';
@@ -20,7 +21,7 @@ const Locations = () => {
 
     return (
         <motion.section 
-            className="min-h-screen flex items-center overflow-x-hidden"
+            className="w-full min-h-screen flex flex-col items-center pt-[220px] lg:pt-[150px] overflow-x-hidden "
             initial={{opacity: 0}}
             animate={{
                 opacity: 1,
@@ -31,7 +32,10 @@ const Locations = () => {
                     }
             }}
         >
-            Locations Page
+            <h3 className="h3 text-center lg:text-left mb-4">
+                Centros donde encontrarnos
+            </h3>
+            <MapLocations />
         </motion.section>
     )
 }
