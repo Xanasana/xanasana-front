@@ -289,7 +289,7 @@ const Locations = () => {
               }}
             >
               <Popup>
-                <div className='flex flex-col items-start justify-center gap-[-10px]'>
+                <div className='flex flex-col items-start justify-center gap-[-10px] '>
                   <h3 className="text-[18px] leading-[20px] font-semibold ont-montserrat">{location.centro}</h3>
                   <p className=" text-[14px] leading-[14px] font-montserrat">{location.address}</p>
                   <a
@@ -309,7 +309,7 @@ const Locations = () => {
 
       {/* Lista de Direcciones */}
       <motion.div 
-        className="w-full lg:h-[500px] lg:w-1/3 rounded-lg bg-[#f0cfbc] lg:min-w-[480px] lg:max-w-[580px] gap-4 p-10 mx-auto lg:mx-0 rounded-tl-[50px] lg:rounded-tl-[0px] ounded-br-[0px] lg:rounded-br-[50px] shadow-lg order-1 lg:order-2"
+        className="w-full lg:h-[500px] lg:w-1/3 rounded-lg bg-[#f0cfbc] lg:min-w-[480px] lg:max-w-[580px] gap-4 p-6 sm:p-10 mx-auto lg:mx-0 rounded-tl-[50px] lg:rounded-tl-[0px] ounded-br-[0px] lg:rounded-br-[50px] shadow-lg order-1 lg:order-2"
         initial={{opacity: 0, x: 80}}
         animate={{
           opacity: 1,
@@ -326,7 +326,7 @@ const Locations = () => {
           {locations.map((location, idx) => (
             <li 
               key={idx}
-              className={`p-2 flex items-center gap-2 cursor-pointer ${highlightedMarker === idx ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
+              className={`p-2 flex items-start xs:items-center gap-2 cursor-pointer ${highlightedMarker === idx ? 'bg-blue-100' : 'hover:bg-gray-100'}`}
               onMouseEnter={() => handleHover(idx)}
               onMouseLeave={handleHoverOut}
               onClick={() => handleMarkerClick(idx)}
@@ -336,7 +336,7 @@ const Locations = () => {
               ) : (
                 <FaMapMarkerAlt className="text-[#473936] text-xl" />
               )}
-              <div className="flex"><p className="font-semibold">{location.centro}: </p>&nbsp;<p>{location.address}</p></div>
+              <div className="flex flex-wrap"><p className="font-semibold">{location.centro}: </p>&nbsp;<p>{location.address}</p></div>
             </li>
           ))}
         </ul>
