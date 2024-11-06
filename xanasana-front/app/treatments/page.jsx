@@ -68,7 +68,7 @@ const Treatments = () => {
                 
                 {/* Fisioterapia general */}
                 <div className="w-[95%] mx-auto flex items-center pt-[220px] lg:pt-[150px] pb-4 lg:pb-0 z-10">
-                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4">
+                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-4">
 
                         {/* Text */}
                         <motion.div 
@@ -88,24 +88,24 @@ const Treatments = () => {
                                 className="text-[30px] leading-[34px] lg:text-[40px] lg:leading-[42px] mb-2 mx-auto max-w-[540px] lg:max-w-none text-center lg:text-left">
                                     Fisioterapia general
                             </h2>
-                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px] text-center lg:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
+                            <p className="lead mx-auto w-full lg:max-w-[600px] lg:mx-0 text-[16px] leading-[20px] lg:text-[14px] lg:leading-[18px] text-center lg:text-left mb-4">
+                                En nuestra práctica de fisioterapia general, ofrecemos un enfoque holístico para el tratamiento de diversas condiciones musculo-esqueléticas. Ya sea que estés lidiando con dolores crónicos, lesiones agudas o simplemente busques mejorar tu bienestar general, nuestro equipo está aquí para ayudarte. Utilizamos una combinación de técnicas manuales, ejercicios terapéuticos y educación al paciente para abordar la causa de tu malestar y mejorar tu calidad de vida. Cada sesión está diseñada para adaptarse a tus necesidades específicas, promoviendo un camino hacia la salud y el bienestar integral.
                             </p>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-8 mx-auto lg:mx-0">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-4 mx-auto lg:mx-0">
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
-                                    <div className="flex items-center gap-[12px] mb-0">
+                                <div className="  flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                    <div className="  flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
-                                        <h3 className="text-1xl font-montserrat font-semibold">Atendemos a domicilio.</h3>
+                                        <h3 className="w-full text-[14px] lg:text-[12px] font-montserrat font-semibold">Atendemos a domicilio.</h3>
                                         
                                     </div>
-                                    <p className="text-[14px] leading-[16px] text-center lg:text-left">
+                                    {/* <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    </p>  
+                                    </p>   */}
                                 </div>
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 2</h3>
@@ -114,10 +114,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 3</h3>
@@ -126,10 +126,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p> 
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 4</h3>
@@ -138,7 +138,7 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}                         
                             </div>
                             <motion.div 
@@ -157,7 +157,7 @@ const Treatments = () => {
                                 <div 
                                     className="hidden lg:flex flex-col lg:flex-row items-center gap-4 max-w-max mx-auto lg:mx-0"
                                     initial={{opacity: 0, y: 40}}
-                                animate={{
+                                    animate={{
                                     opacity: 1,
                                     y: 0,
                                     transition: {
@@ -175,9 +175,9 @@ const Treatments = () => {
                         </motion.div>
                         {/* Image */}
                         <motion.div 
-                            className="flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
-                            initial={{opacity: 0, x: 120}}
-                            animate={{
+                            className="w-full flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
+                                initial={{opacity: 0, x: 120}}
+                                animate={{
                                 opacity: 1,
                                 x: 0,
                                 transition: {
@@ -188,7 +188,7 @@ const Treatments = () => {
                             }}
                         >
                             <Image
-                                className="object-contain  "
+                                className="w-full h-auto object-contain  "
                                 src='/assets/treatments/treatments-1.webp'
                                 width={800}
                                 height={506}
@@ -219,11 +219,11 @@ const Treatments = () => {
                 </div>
                 {/* Fisioterapia para deportistas */}
                 <div className="w-[95%] mx-auto flex items-center mt-[0px] pb-4 lg:pb-0 z-10">
-                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4">
+                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-4">
                         
                         {/* Image */}
                         <motion.div 
-                            className="flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[0px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[0px] overflow-hidden shadow-lg order-2 lg:order-1"
+                            className="w-full flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[0px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[0px] overflow-hidden shadow-lg order-2 lg:order-1"
                             initial={{opacity: 0, x: -120}}
                             animate={{
                                 opacity: 1,
@@ -236,7 +236,7 @@ const Treatments = () => {
                             }}
                         >
                             <Image
-                                className="object-contain  "
+                                className="w-full h-auto object-contain"
                                 src='/assets/treatments/treatments-2.webp'
                                 width={800}
                                 height={506}
@@ -264,24 +264,27 @@ const Treatments = () => {
                                 className="text-[30px] leading-[34px] lg:text-[40px] lg:leading-[42px] mb-2 mx-auto max-w-[540px] lg:max-w-none text-center lg:text-left">
                                     Fisioterapia para deportistas
                             </h2>
-                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px] text-center lg:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
+                            <p className="lead mx-auto w-full lg:max-w-[600px] lg:mx-0 text-[16px] leading-[20px] lg:text-[14px] lg:leading-[18px] text-center lg:text-left mb-4">
+                                En nuestra área de fisioterapia deportiva, entendemos la pasión por el deporte y el compromiso con un rendimiento óptimo. Nos especializamos en la prevención, el tratamiento y la rehabilitación de lesiones deportivas, trabajando con atletas de todos los niveles.<br/>
+                                Nuestros profesionales están capacitados para diseñar programas de recuperación
+                                personalizados que te ayudarán a volver a la actividad lo más rápido y seguro posible.<br/>
+                                Además, te proporcionamos estrategias de prevención que te permitirán reducir el riesgo de futuras lesiones. Juntos, te ayudaremos a alcanzar tus objetivos deportivos y a disfrutar de cada entrenamiento al máximo.
                             </p>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-8 mx-auto lg:mx-0">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-4 mx-auto lg:mx-0">
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
-                                    <div className="flex items-center gap-[12px] mb-0">
+                                <div className="  flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                    <div className="  flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
-                                        <h3 className="text-1xl font-montserrat font-semibold">Atendemos a domicilio.</h3>
+                                        <h3 className="w-full text-[14px] lg:text-[12px] font-montserrat font-semibold">Atendemos a domicilio.</h3>
                                         
                                     </div>
-                                    <p className="text-[14px] leading-[16px] text-center lg:text-left">
+                                    {/* <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    </p>  
+                                    </p>   */}
                                 </div>
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 2</h3>
@@ -290,10 +293,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 3</h3>
@@ -302,10 +305,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p> 
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 4</h3>
@@ -314,7 +317,7 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}                         
                             </div>
                             <motion.div 
@@ -372,7 +375,7 @@ const Treatments = () => {
                 </div>
                 {/* Fisioterapia Postoperatoria */}
                 <div className="w-[95%] mx-auto flex items-center pt-[0px] pb-4 lg:pb-0 z-10">
-                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4">
+                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-4">
 
                         {/* Text */}
                         <motion.div 
@@ -392,24 +395,25 @@ const Treatments = () => {
                                 className="text-[30px] leading-[34px] lg:text-[40px] lg:leading-[42px] mb-2 mx-auto max-w-[540px] lg:max-w-none text-center lg:text-left">
                                     Fisioterapia Postoperatoria
                             </h2>
-                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px] text-center lg:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
+                            <p className="lead mx-auto w-full lg:max-w-[600px] lg:mx-0 text-[16px] leading-[20px] lg:text-[14px] lg:leading-[18px] text-center lg:text-left mb-4">
+                                La fisioterapia postoperatoria es fundamental para una recuperación eficaz tras una cirugía.<br/>
+                                Nuestro equipo de expertos trabaja estrechamente contigo para diseñar un plan de rehabilitación adaptado a tu intervención específica y a tus necesidades. A través de ejercicios guiados y técnicas manuales, te ayudaremos a restaurar la movilidad, reducir el dolor y mejorar la función general. Nuestro objetivo es facilitar tu vuelta a las actividades diarias y deportivas, asegurando una recuperación integral y rápida.<br/> Confía en nosotros para acompañarte en cada paso de este proceso hacia tu bienestar total.
                             </p>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-8 mx-auto lg:mx-0">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-4 mx-auto lg:mx-0">
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
-                                    <div className="flex items-center gap-[12px] mb-0">
+                                <div className="  flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                    <div className="  flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
-                                        <h3 className="text-1xl font-montserrat font-semibold">Atendemos a domicilio.</h3>
+                                        <h3 className="w-full text-[14px] lg:text-[12px] font-montserrat font-semibold">Atendemos a domicilio.</h3>
                                         
                                     </div>
-                                    <p className="text-[14px] leading-[16px] text-center lg:text-left">
+                                    {/* <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    </p>  
+                                    </p>   */}
                                 </div>
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 2</h3>
@@ -418,10 +422,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 3</h3>
@@ -430,10 +434,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p> 
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 4</h3>
@@ -442,8 +446,8 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
-                                {/* End Item */}                         
+                                </div> */}
+                                {/* End Item */}                          
                             </div>
                             <motion.div 
                                 className="flex flex-col items-start lg:max-w-[550px] xl:max-w-[650px] text-center lg:text-left mx-auto lg:mx-0"
@@ -479,7 +483,7 @@ const Treatments = () => {
                         </motion.div>
                         {/* Image */}
                         <motion.div 
-                            className="flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
+                            className="w-full flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
                             initial={{opacity: 0, x: 120}}
                             animate={{
                                 opacity: 1,
@@ -492,7 +496,7 @@ const Treatments = () => {
                             }}
                         >
                             <Image
-                                className="object-contain  "
+                                className="w-full h-auto object-contain"
                                 src='/assets/treatments/treatments-3.webp'
                                 width={800}
                                 height={506}
@@ -521,13 +525,13 @@ const Treatments = () => {
 
                     </div>
                 </div>
-                {/* Fisioterapia para deportistas */}
+                {/* Fisioterapia para Geriatrica */}
                 <div className="w-[95%] mx-auto flex items-center mt-[0px] pb-4 lg:pb-0 z-10">
-                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-4">
+                    <div className="w-full h-full mx-auto flex flex-col lg:flex-row items-start justify-center lg:justify-between gap-4">
                         
                         {/* Image */}
                         <motion.div 
-                            className="flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[0px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[0px] overflow-hidden shadow-lg order-2 lg:order-1"
+                            className="w-full flex items-center justify-center relative mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[0px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[0px] overflow-hidden shadow-lg order-2 lg:order-1"
                             initial={{opacity: 0, x: -120}}
                             animate={{
                                 opacity: 1,
@@ -540,7 +544,7 @@ const Treatments = () => {
                             }}
                         >
                             <Image
-                                className="object-contain  "
+                                className="w-full h-auto object-contain"
                                 src='/assets/treatments/treatments-4.webp'
                                 width={800}
                                 height={506}
@@ -569,24 +573,24 @@ const Treatments = () => {
                                     Fisioterapia Gerontológica
 
                             </h2>
-                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px] text-center lg:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
+                            <p className="lead mx-autow-full lg:max-w-[600px] lg:mx-0 text-[16px] leading-[20px] lg:text-[14px] lg:leading-[18px] text-center lg:text-left mb-4">
+                                La fisioterapia gerontológica se centra en el cuidado y la rehabilitación de las personas mayores, ayudándolas a mantener su movilidad y calidad de vida. Nuestro enfoque personalizado aborda las limitaciones físicas y funcionales que pueden surgir con la edad, utilizando técnicas suaves y adaptadas a las necesidades individuales de cada paciente. A través de programas específicos, buscamos mejorar la fuerza, la flexibilidad y la independencia, promoviendo un envejecimiento activo y saludable.
                             </p>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-8 mx-auto lg:mx-0">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] mb-4 mx-auto lg:mx-0">
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
-                                    <div className="flex items-center gap-[12px] mb-0">
+                                <div className="  flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                    <div className="  flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
-                                        <h3 className="text-1xl font-montserrat font-semibold">Atendemos a domicilio.</h3>
+                                        <h3 className="w-full text-[14px] lg:text-[12px] font-montserrat font-semibold">Atendemos a domicilio.</h3>
                                         
                                     </div>
-                                    <p className="text-[14px] leading-[16px] text-center lg:text-left">
+                                    {/* <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    </p>  
+                                    </p>   */}
                                 </div>
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 2</h3>
@@ -595,10 +599,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col  justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 3</h3>
@@ -607,10 +611,10 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p> 
-                                </div>
+                                </div> */}
                                 {/* End Item */}
                                 {/* Item */}
-                                <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
+                                {/* <div className="flex-1 flex flex-col justify-center lg:justify-start items-center lg:items-start">
                                     <div className="flex items-center gap-[12px] mb-0">
                                         <div className="w-[14px] h-[14px] bg-accent rounded-tl-[28px] rounded-bl-[28px] rounded-br-[28px] rounded-tr-[4px]"></div>
                                         <h3 className="text-1xl font-montserrat font-semibold">Item 4</h3>
@@ -619,7 +623,7 @@ const Treatments = () => {
                                     <p className="text-[14px] leading-[16px] text-center lg:text-left">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                     </p>  
-                                </div>
+                                </div> */}
                                 {/* End Item */}                         
                             </div>
                             <motion.div 
