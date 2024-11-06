@@ -19,7 +19,7 @@ import { useGlobalState } from "@/context/GlobalStateContext";
 const FormContact = () => {
     return (
       <form
-        className="flex flex-col gap-4"
+        className="flex flex-col justify-center items-center gap-4"
       >
           <input type="text" className="input" placeholder="Nombre completo" />
           <input type="text" className="input" placeholder="Direción de email" />

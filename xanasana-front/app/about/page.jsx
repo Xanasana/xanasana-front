@@ -66,11 +66,11 @@ const About = () => {
                     }
             }}
             >
-                <div className="container mx-auto flex items-center pt-48 pb-4 lg:pt-32 lg:pb-0 z-10">
-                    <div className="w-full h-full flex flex-col lg:flex-row items-center justify-between gap-2 lg:gap-8">
+                <div className="container mx-auto flex items-center pt-48 pb-4 pl-0 pr-0 lg:pt-32 lg:pb-0 z-10">
+                    <div className="w-full h-full flex flex-col sm:flex-row items-center sm:items-start  justify-between gap-6 lg:gap-8">
                         {/* Image */}
                         <motion.div 
-                            className="relative w-[300px] h-[420px] lg:w-[380px] xl:w-[450px] lg:h-[530px] xl:h-[600px] mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
+                            className="relative w-[350px] xs:w-[400px] h-[420px] lg:w-[380px] xl:w-[450px] lg:h-[530px] xl:h-[600px] mb-8 lg:mb-0 border-2 border-[#f2dfce] rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg"
                             initial={{opacity: 0, x: -60}}
                             animate={{
                                 opacity: 1,
@@ -83,7 +83,7 @@ const About = () => {
                             }}
                         >
                             <Image
-                                className="object-contain w-[300px] h-[420px] lg:w-[380px] xl:w-[450px] lg:h-[530px] xl:h-[600px] max-w-[450px] max-h-[600px] object-cover"
+                                className="w-[350px] xs:w-[400px] h-[420px] lg:w-[380px] xl:w-[450px] lg:h-[530px] xl:h-[600px] max-w-[450px] max-h-[600px] object-cover"
                                 src='/assets/about/about-1.webp'
                                 width={660}
                                 height={826}
@@ -94,7 +94,7 @@ const About = () => {
                         </motion.div>
                         {/* Text */}
                         <motion.div 
-                            className="flex flex-col items-start lg:max-w-[550px] xl:max-w-[650px] text-center lg:text-left mx-auto lg:mx-0"
+                            className="flex flex-col items-start max-w-[350px] xs:max-w-[400px] lg:max-w-[550px] xl:max-w-[750px] xxl:max-w-[950px] text-center sm:text-left mx-auto lg:mx-0"
                             initial={{opacity: 0, x: 60}}
                             animate={{
                                 opacity: 1,
@@ -109,11 +109,11 @@ const About = () => {
                             <h2 
                                 className="text-[30px] leading-[34px] lg:text-[40px] lg:leading-[42px] mb-0 mx-auto max-w-[540px] lg:max-w-none">Nos esforzamos por alcanzar la excelencia en nuestros tratamientos de fisioterapia.
                             </h2>
-                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px]">
+                            <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] sm:text-[16px] lg:leading-[20px]">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
                             </p>
                             {/* Items */}
-                            <div className="grid grid-cols-3 gap-[30px] mb-4 mx-auto lg:mx-0">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-[40px] sm:gap-[20px] mb-4 mx-auto lg:mx-0">
                                 <div className="">
                                     <StatsItem countNum={12} countText={'+'} text={'Años de Experiencia'}/>
                                 </div>
@@ -143,9 +143,9 @@ const About = () => {
                             >
                                 <div className="flex flex-col  items-center gap-0 max-w-max mx-auto lg:mx-0">
                                     <h2 
-                                        className="w-full text-center lg:text-left text-[30px] leading-[34px] lg:text-[40px] lg:leading-[44px] mb-0 mx-auto max-w-[540px] lg:max-w-none">Formacion:
+                                        className="w-full text-center sm:text-left text-[30px] leading-[34px] lg:text-[40px] lg:leading-[44px] mb-0 mx-auto max-w-[540px] lg:max-w-none">Formacion:
                                     </h2>
-                                    <p className="lead mx-auto max-w-[600px] lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px]">
+                                    <p className="lead mx-auto max-w-[600px] text-center sm:text-left lg:mx-0 text-[14px] leading-[18px] lg:text-[16px] lg:leading-[20px]">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia magni ex consectetur libero reiciendis obcaecati aperiam eaque laborum quasi enim. Quasi adipisci aperiam amet. Maxime quia non architecto accusantium voluptatum.
                                     </p>
                                 </div>

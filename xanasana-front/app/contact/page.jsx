@@ -153,8 +153,8 @@ const Contact = () => {
                                 }
                                 }}
                         >
-                            <div className="bg-[#f0cfbc] w-full max-w-[580px] gap-4 p-10 mx-auto lg:mx-0 rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg">
-                                <h3 className="h3 mb-8 text-center">
+                            <div className="bg-[#f0cfbc] w-full max-w-[580px] gap-4 p-5 sm:p-10 mx-auto lg:mx-0 rounded-tl-[50px] rounded-bl-[0px] rounded-tr-[0px] rounded-br-[50px] overflow-hidden shadow-lg">
+                                <h3 className="h3 text-[30px] leading-[30px] mb-8 text-center">
                                     Contacto con nosotros
                                 </h3>
                                 <FormContact />
